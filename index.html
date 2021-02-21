@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Dream Hotel </title>
+		<meta name= "viewport" content= "width= device-width, initial-scale= 1" />
+		<link rel= "stylesheet" type= "text/css" href= "css/dream_hotel.css" />
+		<link rel= "stylesheet" type= "text/css" media= "(min-width: 800px)" href= "css/media_large.css">
+		<link rel= "stylesheet" type= "text/css" href= "css/all.css" />
+		<script src= "js/jquery-3.4.1.js"></script>
+		<script src= "js/dream_hotel.js"></script>
+	</head>
+	<body>
+			
+		<div id= "pop-up">
+			<i id= "close-popup" class= "fas fa-window-close fa-lg"></i>
+			<h1> Hello, </h1>
+			<p> This process has been disabled, we are sorry for any inconvenience.
+			</p>
+		</div>
+		
+		<div id= "container">
+			
+<!--                             HOME                            -->
+	
+			<div id= "home">
+				
+			<div id= "nav_social">
+				<a href= "#" class= "social"><i class= "fab fa-facebook-f"></i></a>
+				<a href= "#" class= "social"><i class= "fab fa-instagram"></i></a>
+				<a href= "#" class= "social"><i class= "fab fa-github"></i></a>
+			</div>
+				
+<!--               Header and Navigation for Small Screens.         -->
+					
+				<div class= "navigation">
+					<div id= "nav_cons">
+						<i class= "fa fa-bars"></i>
+					</div>
+					
+					<div id= "nav_icons">
+						<div id= "nav_con">
+						<i class= "fa fa-bars"></i>
+						</div>
+
+						
+						<div id= "nav_bar">
+							<ul>
+								<li><a href= "#home" class= "content" id= "home_lnk">Home</i></a></li>
+								<li><a href= "#about" class= "content" id= "about_lnk">About</a></li>
+								<li><a href= "#service" class= "content" id= "service_lnk">Services</a></li>
+								<li><a href= "#gallery" class= "content" id= "gallery_lnk">Gallery </a><i class= "fa fa-plus"></i>
+									<div id= "drop_menu">
+										<ol>
+											<li><a href="#room">rooms</a></li>
+											<li><a href="#main">mains</a></li>
+											<li><a href="#dessert">desserts</a></li>
+											<li><a href="#drink_icecream">drinks & ice creams</a></li>
+										</ol>
+									</div>
+								</li>
+								<li><a href= "#testimonial" class= "content" id= "testimonial_lnk">Testimonial</a></li>
+								<li><a href= "#contact" class= "content" id= "contact_lnk">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+				
+					<div id= "search_bar_mb">
+						<input id= "search_box_mb" type= "text" placeholder= "Search" >
+						<a href= "#" id= "search_icn_mb" >
+							<img src= "img/search2.png">
+						</a>
+					</div>
+				</div>
+					
+					
+				<div id= "contact_info">
+					<div id= "mobile_no">
+						09035842321
+					</div>
+					
+					<div id= "social_ntw">
+						<a href= "#"><img src= "img/fb.png" width= "20" > </a>
+						<a href= "#"><img src= "img/insta.png" width= "20" > </a>
+						<a href= "#"><img src= "img/g+.png" width= "20" > </a>
+						<a href= "#"><img src= "img/tw.png" width= "20" > </a>
+					</div>
+				</div>
+				
+				<div id= "header_text">
+					<h1> dream<span>hotel</span></h1>
+				</div>
+				
+				
+				
+				
+<!--          Header and Navigation for Large Screens.           -->
+				
+				<nav id= "navigation">
+					
+					<div id= "nav_content">
+						<ul>
+						
+							<li><a href= "#home" class= "nav" id= "home_lnk">Home</a></li>
+							<li><a href= "#about" class= "nav" id= "about_lnk">About</a></li>
+							<li><a href= "#service" class= "nav" id= "service_lnk">Services</a></li>
+							<li><a href= "#gallery" class= "nav" id= "gallery_lnk">Gallery</a></li>
+							<li><a href= "#testimonial" class= "nav" id= "testimonial_lnk">Testimonial</a></li>
+							<li><a href= "#contact" class= "nav" id= "contact_lnk">Contact us</a></li>
+						</ul>
+					</div>
+					
+					<div id= "search_bar">
+						<input id= "search_box" type= "text" placeholder= "Search" >
+						<div id= "search_icn">
+							<img src= "img/search2.png">
+						</div>
+					</div>
+					
+				</nav>
+				
+				
+				<div id= "home_text">
+					<div id= "text">
+						<h1>lorem ipsum</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium. 
+						</p>
+						<button>read more</button>
+					
+					</div>
+					
+					<div id= "booking_form">
+						<form>
+						
+							<label for= "name">Name</label>
+								<div id= "customer_name">
+									<input name= "name" id= "name" type= "text" class= "input_style name" placeholder= "First Name" required>
+									<input type= "text" placeholder= "Last Name" class= "input_style name">
+								</div><br>
+							
+							<label for= "email">Email</label>
+								<input name= "email" id= "email" type= "email" class= "input_style" placeholder= "ex: myemail@yahoo.com" required><br><br>
+						
+							<label for= "room_type">Room Type</label>
+								<input name= "room_type" id= "room_type" type= "text" class= "input_style" placeholder= "None" required><br><br>
+						
+							<label for= "check_in">Check in & Time</label>
+								<div id= "checkIn_dateTime">
+									<input name= "check_in" id= "check_in" type= "date" class= "input_style" required>
+									<input type= "time" class= "date_time" required>
+								</div><br>
+								
+							<label for= "check_out">Check out & Time</label>
+								<div id= "checkOut_dateTime">
+									<input name= "check_out" id= "check_out" type= "date" class= "input_style" required>
+									<input type= "time" class= "date_time" required>
+								</div><br>
+					
+							<input id= "submit_btn" type= "button" value= "submit"><br><br>
+						</form>
+					</div>
+				</div>
+			</div>
+<!--                    home ends here                      -->
+			
+			
+			
+			
+			
+			
+<!--                             ABOUT                            -->
+
+			<div id= "about">
+				<div id= "first_row">
+					<div id= "about_info">
+						<h2> About us </h2>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod.
+						</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod.
+						</p>
+						<button>read more</button>
+					</div>
+				
+					<div id= "first_row_img">
+						<img src= "img/ab6.jpg" >
+					</div>
+					
+				</div>
+				
+				
+				
+				<div id= "second_row">
+					
+					<div id= "restaurant" class = "second_row">
+						<div id= "restaurant_text">
+							<h2> restaurant </h2>
+							<p>national & international cuisine </p>
+							<button>view more</button>
+						</div>
+						
+					</div>
+					
+				
+					<div id= "booking" class = "second_row">
+						<div id= "booking_text">
+							
+							<h2> early bookings</h2>
+							<h3>save 20%</h3>
+							<p>Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium quis.</p>
+							<button>view more</button>
+							<button>book now</button>
+						</div>
+					</div>
+				
+					<div id= "second_row_img" class = "second_row">
+						<img width= "100%" src= "img/ab5.jpg">
+					</div>
+				</div>
+			
+			
+<!--                    about ends here                      -->
+	
+	
+	
+	
+	
+	
+	
+<!--                          SERVICE                            -->
+			
+			<div id= "service">
+				<h2> services </h2>
+				
+				<div id= "service_content">
+					<div class= "service_content" id= "service_text">
+						<div id= "text_one">
+							<h1>15<span>years of Experience </span></h1>
+						</div>
+					
+						<div id= "text_two">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium. Vivamus dictum nisi ac fermentum interdum. Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci.</p>
+						</div>
+					
+						<div id= "text_three">
+							<div class= "icon" >
+								<img src= "">
+								<p>lorem ipsum</p>
+							</div>
+						
+							<div class= "icon" >
+								<img src= "">
+								<p>lorem ipsum</p>
+							</div>
+						
+							<div class= "icon" >
+								<img src= "">
+								<p>lorem ipsum</p>
+							</div>
+						</div>
+					</div>
+				
+					<div class= "service_content" id= "service_img">
+						<img src= "img/ab1.jpg">
+					</div>
+				</div>
+				
+			</div>
+
+<!--                   service ends here                   -->  
+			
+			
+			
+			
+			
+<!--                       GALLERY                         -->
+			
+			<div id= "gallery">
+				<h2> our gallery </h2>
+				<div id= "gallery_list">
+					<ul>
+						<li><a href="#room">rooms</a></li>
+						<li><a href="#main">mains</a></li>
+						<li><a href="#dessert">desserts</a></li>
+						<li><a href="#drink_icecream">drinks & ice creams</a></li>
+					</ul>
+				</div>
+				
+				<div id= "gallery_content">
+					
+					
+					<div id= "room">
+						<div class= "gallery_content" id= "first_content">
+							<div id= "first_content_text" class= "content_txt" >
+								<div id= "room_txt1">
+									<h1> double room </h1>
+									<h3> $114/per night</h3>
+								</div>
+								<p>Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit.</p>
+								<ul>
+									<li>Adults: 3</li>
+									<li>Facilities: Closet with Hangers, Digital Personal Safe, HD Flat Screen TV (including Satellite TV), Telephone</li>
+									<li>Size: 30m<sup>2</sup></li>
+									<li>Bed Type: two bed</li>
+									<li>Categories: Double, Single </li>
+								</ul>
+							</div>
+						
+							<div class= "content_txt" id= "first_content_img">
+								<img width= "100%" src= "img/g-bed2.jpg">
+							</div>
+						</div>
+					
+						<div class= "gallery_content" id= "second_content">
+							<div id= "second_content_text" class= "content_txt" >
+								<div id= "room_txt2">
+									<h1> single room </h1>
+									<h3> $114/per night</h3>
+								</div>
+								<p>Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit.</p>
+								<ul>
+									<li>Adults: 2</li>
+									<li>Facilities: Closet with Hangers, Digital Personal Safe, HD Flat Screen TV (including Satellite TV), Telephone</li>
+									<li>Size: 30m<sup>2</sup></li>
+									<li>Bed Type: One bed</li>
+									<li>Categories: Double, Single </li>
+								</ul>
+							</div>
+						
+							<div id= "second_content_img" class= "content_txt">
+								<img width= "100%" src= "img/g-bed3.jpg">
+							</div>
+						</div>
+					
+					</div><br><br>
+						
+						
+					
+					<hr size= "2" color= "#DF6200"><br>
+						
+						
+					
+					<div id= "main">
+						<div class= "gallery_content" >
+							<div id= "main_content_text">
+								<h1> main course</h1>
+								<h3> $50 </h3>
+								<p>Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. </p>
+							</div>
+						
+							<div id= "main_content_img">
+								<img width= "100%" src= "img/m1.jpg">
+							</div>
+						</div>
+					</div><br><br>
+					
+					
+					
+					<hr size= "2" color= "#DF6200"><br>
+					
+					
+						
+					
+					<div id= "dessert">
+						<div class= "gallery_content" >
+							<div id= "dessert_content_text">
+								<h1>desserts</h1>
+								<h3> $10 </h3>
+								<p>Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. </p>
+							</div>
+						
+							<div id= "dessert_content_img">
+								<img width= "100%" src= "img/des1.jpg">
+								<img width= "100%" src= "img/gi1.jpg">
+								<img width= "100%" src= "img/gi2.jpg">
+								<img width= "100%" src= "img/gi3.jpg">
+								<img width= "100%" src= "img/gi4.jpg">
+							</div>
+						</div>
+					</div><br><br>
+					
+					
+					
+					<hr size= "2" color= "#DF6200"><br>
+						
+						
+						
+					
+					<div id= "drink_icecream">
+						<div class= "gallery_content" >
+							<div id= "drink_content_text">
+								<h1> drinks & ice creams</h1>
+								<h3> $20 </h3>
+								<p>Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+							</div>
+						
+							<div id= "drink_content_img">
+								<img width= "100%" src= "img/gi5.jpg">
+								<img width= "100%" src= "img/ga11.jpg">
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			
+			</div>
+					
+<!--                   gallery ends here                   -->  
+	
+	
+	
+	
+	
+			
+			
+<!--                     TESTIMONIAL                          -->  
+			
+			
+			<div id= "testimonial">
+				<h2> our customers says </h2>
+				
+				<div id= "user">
+					<div id= "comment">
+						<button class= "arrow" id= "arrow_left"><img  src= "img/left.png" ></button>
+						<p><i class= "fa fa-quote-left"></i><span>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</span><i class= "fa fa-quote-right"></i></p>
+						<button class= "arrow" id= "arrow_right"><img src= "img/right.png"></button>
+					</div>
+					
+<!--                for small screens.              -->
+					<div id= "user_name_mb">
+						<div id= "comment_gallery">
+							<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+						</div>
+						
+						<p id= "display_name_mb"> John </p>
+						<div id= "name_gallery_mb">
+							<p> John </p>
+							<p> Lizzy</p>
+							<p> Sara </p>
+							<p>Andrew</p>
+							<p>Camil</p>
+						</div>
+					</div>
+					
+<!--                    ends here.                   -->
+					
+					
+					<div id= "user_img">
+						
+						<img  id= "image" src= "img/test1.jpg">
+						
+						<div id= "imgGallery">
+							
+							<img src= "img/test1.jpg">
+							<img src= "img/test2.jpg">
+							<img src= "img/test3.jpg">
+							<img src= "img/test4.jpg">
+							<img src= "img/test5.jpg">
+							
+						</div>
+						
+						<div id= "user_name">
+							<p id= "displayName"> John </p>
+							<div id= "nameGallery">
+								<p> John </p>
+								<p> Lizzy</p>
+								<p> Sara </p>
+								<p> Andrea</p>
+								<p>Anna</p>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div id= "next_btn">
+						<div class= "dots"></div>
+						<div class= "dots"></div>
+						<div class= "dots"></div>
+					</div>
+				</div>
+			</div><br><br><br>
+							
+							
+			
+			
+			<div id= "contact">
+				<h2> contact us</h2>
+				
+				<div id= "contact_form">
+					<form>
+						<div id= "first_group">
+							<input name= "first_name" id= "first_name" type= "text" class= "input_style" placeholder= "First Name" required>
+							<input name= "last_name" id= "last_name" type= "text" class= "input_style" placeholder= "Last Name" required>
+						</div>
+						
+						<div id= "second_group">
+							<input name= "phone_no" id= "phone_no" type= "tel" class= "input_style" placeholder= "Phone Number" required>
+							<input name= "user_email" id= "user_email" type= "email" class= "input_style" placeholder= "Email" required>
+						</div><br>
+				
+						<textarea cols= "30" rows= "5" placeholder= "Message" name= "user_text" id= "user_text"></textarea><br>
+				
+						<button id= "submit_btn">submit</button>
+					</form>
+					
+				</div>
+				
+				
+			</div>
+	
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/20-off-discount-for-elegant-themes-divi-sale-coupon-code-2019/">elgant themes</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width: 100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+		
+		</div>
+	</body>
+</html>
